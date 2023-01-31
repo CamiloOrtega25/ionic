@@ -18,7 +18,8 @@ export class LoginPage implements OnInit {
       {type: "pattern", message: "Tu Email no es valido"}
     ], 
     password: [
-      {type: "required", message: "La contraseña es Obligatoria"}
+      {type: "required", message: "La contraseña es Obligatoria"},
+      {type: "pattern", message: "Tu contraseña no es valido"}
     ]
     
   }
@@ -55,7 +56,7 @@ export class LoginPage implements OnInit {
   loginUser(credentials: any){
     console.log(credentials);
     this.auth.loginUser(credentials).then( (res: any) => {
-      this.storage.set("isUserLoggedIn", false);
+      this.storage.set("isUserLoggedIn", true);
       this.storage.set("user_id", res.user.id);
       this.navCtrl.navigateForward("/menu/home");
     }) .catch(err => {

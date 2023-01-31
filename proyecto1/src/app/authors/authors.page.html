@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button text="Volver"></ion-back-button>
+      <ion-back-button text="Volver" ></ion-back-button>
     </ion-buttons>
     <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
@@ -9,10 +9,9 @@
     <ion-title>Autores</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let author of authors">
+    <ion-item *ngFor="let author of authors" (click)="showAuthor(author.id)">
       <ion-label>{{author.name}}</ion-label>
     </ion-item>
   </ion-list>

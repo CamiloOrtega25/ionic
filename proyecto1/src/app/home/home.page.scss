@@ -2,17 +2,21 @@
  ion-avatar {
   height: 150px;
   width: 100%;
+  color: #C0C0C0;
 }
 
 ion-avatar img {
   width: 90px;
   height: 90px;
+ 
 }
 ion-card {
   width: 100%;
   margin: 0;
   padding: 0;
   height: 100px;
+  background-color: #FFFF00;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ion-card ion-card-header {
@@ -35,4 +39,18 @@ ion-card ion-card-title {
 ion-card ion-card-content {
   font-size: .8em;
   text-transform: lowercase;
+}
+ion-content{
+  --ion-background-color:#000000;
+  }
+  ion-title{
+    color:#000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:normal;
+}
+ion-content > p{
+  color:#C0C0C0;
+}
+ion-header{
+  --ion-background-color:#000000;
 }

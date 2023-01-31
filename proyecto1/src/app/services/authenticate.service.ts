@@ -46,6 +46,7 @@ export class AuthenticateService {
       let params = {
         "user": credentials
       }
+      console.log(params,"params")
       this.http.post(`${this.urlServer}login`, params, this.httpHeaders).subscribe( (data: any) => {
         if (data.status == "OK") {
           accept(data);
@@ -53,7 +54,7 @@ export class AuthenticateService {
           reject(data.errors)
         }
       }, (error) => {
-        reject("Error en Login")
+        reject(error)
       })
     })
   }

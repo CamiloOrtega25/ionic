@@ -21,36 +21,36 @@ export class IntroPage implements OnInit {
       title: "Libreria dCamilo",
       desc: "Libros para leer",
       subtitle: "libros y mas libros",
-      img: "../assets/imagen.png",
-      description: "Vienvenido al desconocido mundo de la lectura"
+      img: "../assets/logo1.jpg",
+      description: "Bienvenido al desconocido mundo de la lectura"
     },
     {
       title: "Libreria dCamilo",
       desc: "libro uno",
       subtitle: "libros y mas libros",
       img: "../assets/libro1.jpg",
-      description: "La Historia definitiva de la vida y el legado"
+      description: "Mitnick fue el hacker más escurridizo de la historia. Logró colarse en ordenadores y redes de las agencias y compañías más grandes del mundo."
     },
     {
       title: "Libreria dCamilo",
       desc: "libro dos",
       subtitle: "libros y mas libros",
       img: "../assets/libro2.jpg",
-      description: "La Historia definitiva de la vida y el legado."
+      description: "Todos tenemos una manera distinta de enfrentar nuestras perdidas y aprender de ellas, considero que es el paso final para continuar en este viaje por la vida."
     },
     {
       title: "Libreria dCamilo",
       desc: "libro tres",
       subtitle: "libros y mas libros",
       img: "../assets/libro3.png",
-      description: "La Historia definitiva de la vida y el legado."
+      description: "El arte de la guerra es un libro sobre tácticas y estrategias militares, escrito por Sun Tzu, un famoso estratega militar chino. Se trata de un antiguo tratado militar chino que data del final del periodo de las primaveras y otoños."
     },
     {
       title: "Libreria dCamilo",
       desc: "libro cuatro",
       subtitle: "libros y mas libros",
       img: "../assets/libro4.jpg",
-      description: "La Historia definitiva de la vida y el legado."
+      description: "Esta esclarecedora obra ilustrada nos ofrece una historia del universo del Big Bang a los agujeros negros."
     },
     
   ]

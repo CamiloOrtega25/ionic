@@ -3,7 +3,7 @@
     <ion-title>REGISTRO</ion-title>
     <ion-buttons>
       <ion-button (click)="goToLogin()" color="warning">
-        Back
+        Atras
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -47,10 +47,12 @@
     <ion-list>
       <ion-item>
         <ion-select interface="popover" placeholder="Tipo de documento" formControlName="document_type">
-          <ion-select-option value="cc">CC</ion-select-option>
-          <ion-select-option value="ti">TI</ion-select-option>
+          <ion-select-option value="cc">Cedula</ion-select-option>
+          <ion-select-option value="ti">Tajera de identidad</ion-select-option>
           <ion-select-option value="ce">Cedula Extranjera</ion-select-option>
-        </ion-select>
+          <ion-select-option value="ps">Pasaporte</ion-select-option>
+          <ion-select-option value="rc">Registro civil</ion-select-option>
+        </ion-select> 
       </ion-item>
       <div>
         <ng-container *ngFor="let validation of validation_message.document_type">
@@ -82,9 +84,10 @@
     <ion-list>
       <ion-item>
         <ion-select interface="popover" placeholder="Carrera" formControlName="career">
-          <ion-select-option value="Ing. S.">Ingenieria de Sistemas</ion-select-option>
-          <ion-select-option value="Ing. I.">Ingenieria Industrial</ion-select-option>
-          <ion-select-option value="Ing. E.">Ingenieria Electronica</ion-select-option>
+          <ion-select-option value="sistemas">Ingenieria de Sistemas</ion-select-option>
+          <ion-select-option value="industrial">Ingenieria Industrial</ion-select-option>
+          <ion-select-option value="contaduria">Contaduria</ion-select-option>
+          <ion-select-option value="administracion">Administracion</ion-select-option>
         </ion-select>
       </ion-item>
       <div>
