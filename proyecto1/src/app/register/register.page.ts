@@ -48,44 +48,45 @@ export class RegisterPage implements OnInit {
     private authenticate: AuthenticateService,
     private alertController: AlertController) {
     
-    this.registerForm = this.formBuilder.group({
-      name: new FormControl("",
-        Validators.compose(
-          [Validators.required,
-          Validators.pattern("^[a-zA-Z0-9 ]{50}$")]
-        )),
-      last_name: new FormControl("",
-        Validators.compose(
-          [Validators.required,
-          Validators.pattern("^[a-zA-Z0-9 ]{50}$")]
-        )),
-      document_type: new FormControl("",
-        Validators.compose(
-          [Validators.required,
-          ]
-        )),
-      document_number: new FormControl("",
-        Validators.compose(
-          [Validators.required,
-          ]
-        )),
-      career: new FormControl("",
-        Validators.compose(
-          [Validators.required,
-          ]
-        )),
-      email: new FormControl("",
-        Validators.compose(
-          [Validators.required,
-          ]
-        )),
-      password: new FormControl("",
-        Validators.compose(
-          [Validators.required,
-          ]
-        ))
-    });
-  }
+      this.registerForm = this.formBuilder.group({
+        name: new FormControl("",
+          Validators.compose(
+            [Validators.required,
+            Validators.pattern("^[a-zA-Z0-9 ]{50}$")]
+          )),
+        last_name: new FormControl("",
+          Validators.compose(
+            [Validators.required,
+            Validators.pattern("^[a-zA-Z0-9 ]{50}$")]
+          )),
+        document_type: new FormControl("",
+          Validators.compose(
+            [Validators.required,
+            ]
+          )),
+        document_number: new FormControl("",
+          Validators.compose(
+            [Validators.required,
+            ]
+          )),
+        career: new FormControl("",
+          Validators.compose(
+            [Validators.required,
+            ]
+          )),
+        email: new FormControl("",
+          Validators.compose(
+            [Validators.required,
+            ]
+          )),
+        password: new FormControl("",
+          Validators.compose(
+            [Validators.required,
+            ]
+          ))
+      });
+    }
+  
 
   ngOnInit() {
   }
