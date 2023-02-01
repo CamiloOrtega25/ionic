@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuController, NavController } from '@ionic/angular';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'app-menu',
@@ -40,5 +41,11 @@ export class MenuPage implements OnInit {
   goToMyFavorites(){
     this.navCtrl.navigateRoot("/menu/favorite-books");
     this.menu.close();
+  }
+
+  goTotopbooks(){
+    this.navCtrl.navigateRoot("/menu/topbooks");
+    this.menu.close();
+
   }
 }

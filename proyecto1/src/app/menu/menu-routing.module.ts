@@ -10,7 +10,7 @@ const routes: Routes = [
     children: [
       {
         path: "home",
-        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+        loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)
       },
       {
         path: 'authors',
@@ -23,7 +23,7 @@ const routes: Routes = [
       {
         path: 'favorite-books',
         loadChildren: () => import('../favorite-books/favorite-books.module').then( m => m.FavoriteBooksPageModule)
-      }
+      },
     ]
   }
 ];
@@ -32,4 +32,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class MenuPageRoutingModule { }
+export class MenuPageRoutingModule {}
