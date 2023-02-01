@@ -26,7 +26,7 @@ export class AuthorsPage implements OnInit {
     const modal = await this.modalController.create({
       component: AuthorsDetailModalPage,
       componentProps: {
-        authorId: authorId
+        authors: authorId
       }
     });
     return await modal.present();

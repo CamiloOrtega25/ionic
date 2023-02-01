@@ -61,8 +61,8 @@ export class HomePage {
     this.navCtrl.navigateForward("/menu/favorite-books");
     this.menu.close();
   }
-  goTotopbooks(){
-    this.navCtrl.navigateForward("/menu/topbooks");
+  goTopBooks(){
+    this.navCtrl.navigateForward("/menu/topbooks")
     this.menu.close();
- }
+  }
 } 

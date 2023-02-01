@@ -19,15 +19,13 @@ constructor(
 ngOnInit() {
   this.getAuthorsData();
 }
-closeModal() {
-  this.modalController.dismiss();
-}
-
 getAuthorsData(){
-  this.filterAuthors = this.libraryService.authors.filter((a: any) => 
-  a.id === this.navParams.get("authorId"))[0]
+  this.filterAuthors = this.navParams.get("authors")
   console.log(this.filterAuthors)
 
 }
+closeModal(){
+  this.modalController.dismiss();
+ }
 }
 
